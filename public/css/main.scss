@@ -1,0 +1,96 @@
+@import 'base';
+
+
+body {
+    background-color: $bg-color;
+    color: $msg-color;
+    margin: 0;
+
+    h1 {
+        color: $text-color;
+    }
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .page {
+        @include f;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    #loginPage {
+        display: none;
+
+    }
+    #chatPage {
+        @include f;
+    }
+    #loginNameInput {
+        border: 2px solid #000;
+        background-color: azure;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        outline: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+    .chatArea {
+        flex: 1;
+        width: 100%;
+        @include f;
+
+    }
+    .chatList {
+        flex: 1;
+        background-color: rgba(0, 0, 0, 0.308);
+
+        li {
+            padding: 3px;
+            font-size: 15px;
+
+        
+            }
+            .m-status {
+                color: $server-color;
+                font-style: italic;
+            
+            }    
+            .m-txt {
+                span {
+                    font-weight: bold;
+                    color: azure;
+                }    
+        }
+        
+    }
+    .userList {
+        width: 200px;
+        background-color: azure;
+        overflow-y: scroll;
+        max-height: calc(100vh -40px);
+
+        li {
+            padding: 5px;
+            font-size: 15px;
+
+        }
+    }
+    .chatInput {
+        width: 100%;
+        @include f;
+    }
+    #chatTextInput {
+        flex: 1;
+        height: 40px;
+        padding: 0 10px;
+        font-size: 15px;
+        background-color: azure;
+        outline: 0;
+        border: 0;
+    }
+}

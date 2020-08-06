@@ -1,0 +1,8 @@
+$bg-color: #18202d;
+$text-color: azure;
+$msg-color: #e81b4a;
+$server-color: rgba(104, 104, 104, 0.911);
+
+@mixin f() {
+    display: flex;    
+}

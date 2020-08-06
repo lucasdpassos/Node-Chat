@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Passar para o Bulma ou Sass depois-->    
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Node Chat</title>
+</head>
+<body>
+    <div class="page" id="loginPage">
+        <h1>Qual seu nome?</h1>
+        <input type="text" id="loginNameInput">
+        
+    </div>
+
+    <div class="page" id="chatPage">
+        <div class="chatArea">
+            <ul class="chatList">                
+                <li class="m-status">Paulo entrou na sala</li>
+                <li class="m-status">Paulo saiu da sala</li>
+                <li class="m-txt"><span>Lucas: </span>Opa, tudo bem?</li>
+            </ul>
+            <ul class="userList">
+                <li>Lucas</li>
+                <li>Paulo</li>
+                <li>Zeca</li>
+            </ul>
+        </div>
+        <div class="chatInput">
+            <input type="text" id="chatTextInput" placeholder="Digite sua mensagem" />
+        </div>
+
+    </div>
+</body>
+</html>
