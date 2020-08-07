@@ -5,7 +5,7 @@ body {
 }
 
 body h1 {
-  color: azure;
+  color: #f05353;
 }
 
 body ul, body li {
@@ -32,13 +32,13 @@ body .page {
 }
 
 body #loginPage {
-  display: none;
-}
-
-body #chatPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+body #chatPage {
+  display: none;
 }
 
 body #loginNameInput {
@@ -67,6 +67,8 @@ body .chatList {
       -ms-flex: 1;
           flex: 1;
   background-color: rgba(0, 0, 0, 0.308);
+  overflow-y: scroll;
+  max-height: calc(100vh -40px);
 }
 
 body .chatList li {
@@ -84,26 +86,30 @@ body .chatList .m-txt span {
   color: azure;
 }
 
-body .userList {
+body .chatList .m-txt .my-msg {
+  color: red;
+}
+
+.userList {
   width: 200px;
   background-color: azure;
   overflow-y: scroll;
   max-height: calc(100vh -40px);
 }
 
-body .userList li {
+.userList li {
   padding: 5px;
   font-size: 15px;
 }
 
-body .chatInput {
+.chatInput {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body #chatTextInput {
+#chatTextInput {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;

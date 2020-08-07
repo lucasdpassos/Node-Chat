@@ -23,11 +23,11 @@ body {
         
     }
     #loginPage {
-        display: none;
+        display: flex;
 
     }
     #chatPage {
-        @include f;
+        display: none;
     }
     #loginNameInput {
         border: 2px solid #000;
@@ -48,6 +48,7 @@ body {
     .chatList {
         flex: 1;
         background-color: rgba(0, 0, 0, 0.308);
+        @include scroll;
 
         li {
             padding: 3px;
@@ -63,16 +64,24 @@ body {
             .m-txt {
                 span {
                     font-weight: bold;
-                    color: azure;
-                }    
+                    color: rgb(248, 12, 44), 46, 46);
+                         
+                    
+                
+                }
+                .my-msg {
+                    color: red;
+    }        
+               
+                }
+                  
         }
         
     }
     .userList {
         width: 200px;
         background-color: azure;
-        overflow-y: scroll;
-        max-height: calc(100vh -40px);
+        @include scroll;
 
         li {
             padding: 5px;
@@ -93,4 +102,3 @@ body {
         outline: 0;
         border: 0;
     }
-}

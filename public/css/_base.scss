@@ -1,8 +1,13 @@
 $bg-color: #18202d;
-$text-color: azure;
+$text-color: rgb(240, 83, 83);
 $msg-color: #e81b4a;
 $server-color: rgba(104, 104, 104, 0.911);
 
 @mixin f() {
     display: flex;    
+}
+
+@mixin scroll () {
+    overflow-y: scroll;
+    max-height: calc(100vh -40px);
 }
